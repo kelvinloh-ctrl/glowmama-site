@@ -1534,8 +1534,8 @@ export function Landing() {
                 style={{
                   backgroundColor: index === 0 ? '#EBCDB7' : index === 1 ? '#B87D5E' : '#2F6A96',
                   color: index === 0 ? '#2A1A14' : '#FFFFFF',
-                  ringColor: index === 1 ? '#F6921E' : 'transparent'
-                }}
+                  ['--tw-ring-color' as string]: index === 1 ? '#F6921E' : 'transparent'
+                } as React.CSSProperties}
               >
                 <div className="space-y-3">
                   <div 
